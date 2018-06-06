@@ -12,6 +12,7 @@ import {ForumPageComponent} from './system/content/forum-page/forum-page.compone
 import {FormsPageComponent} from './system/content/forms-page/forms-page.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsPageModule} from './system/content/forms-page/forms-page.module';
 
 
 @NgModule({
@@ -19,17 +20,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppComponent,
     HeaderComponent,
     HomePageComponent,
-    ForumPageComponent,
-    FormsPageComponent
+    ForumPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
-    FormsModule,
-    ReactiveFormsModule,
     PrimeNgImports,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

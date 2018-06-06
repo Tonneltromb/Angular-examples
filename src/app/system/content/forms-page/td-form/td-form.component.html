@@ -1,0 +1,31 @@
+<p-fieldset legend="Form with ngModel" [toggleable]="true">
+  <div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-inputgroup">
+          <input type="text" pInputText placeholder="Enter name" [ngModel]="pen.name">
+        </div>
+        <hr>
+        <div class="ui-inputgroup">
+          <div class="ui-g">
+            <div class="ui-g-12">
+              <span>Choose color:</span>
+            </div>
+            <div class="ui-g-12">
+              <select [(ngModel)]="pen.color">
+                <option *ngFor="let color of colors" [value]="color">{{color}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+      <h3>Name: {{pen.name}}</h3>
+      <h3>Color: <span>{{pen.color}}</span></h3>
+    </div>
+    <div class="ui-g-12 ui-md-4" [ngStyle]="{'border': '1px solid black'}">
+    </div>
+  </div>
+  <div class="ui-g-12">
+    <button pButton label="Add pen" class="ui-button-success" type="submit"></button>
+  </div>
+</p-fieldset>
