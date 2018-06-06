@@ -1,0 +1,37 @@
+a, a:hover{
+  color: inherit;
+  text-decoration: inherit;
+  outline: none;
+}
+
+.app-container{
+  display: flex;
+}
+.app-container__item{
+  text-align: center;
+}
+.header{
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
+  .header__item{
+    font-size: 1.1em;
+    padding: 1.5em;
+    color: white;
+    text-decoration: none;
+  }
+  .header__item:hover{
+    background-color: darkslateblue;
+    border-radius: 0 0 5px 5px;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+.body{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.link__active{
+  color: crimson;
+}

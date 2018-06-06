@@ -1,0 +1,19 @@
+<div class="app-container">
+  <div class="ui-g-2 app-container__item header__item"
+       routerLink="/"
+       routerLinkActive="link__active" [routerLinkActiveOptions]="{exact: true}">
+    Главная
+  </div>
+  <div class="ui-g-2 app-container__item header__item" [routerLink]="'/forms'" routerLinkActive="link__active">
+    Формы
+  </div>
+  <div class="ui-g-3 app-container__item header__item" [routerLink]="'/users'" routerLinkActive="link__active">
+    Пользователи
+  </div>
+  <div class="ui-g-2 app-container__item header__item" [routerLink]="'/forum'" routerLinkActive="link__active">
+    Форум
+  </div>
+  <div class="ui-g-3 app-container__item header__item" [routerLink]="'/lk'" routerLinkActive="link__active">
+    Личный кабинет
+  </div>
+</div>
