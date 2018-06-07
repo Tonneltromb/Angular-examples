@@ -17,6 +17,10 @@ export class ForumPageComponent implements OnInit,
   DoCheck,
   AfterViewInit, AfterContentInit, AfterContentChecked, AfterViewChecked {
 
+  constructor() {
+    console.log('constructor');
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
     console.log('ngOnChanges');
   }
