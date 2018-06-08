@@ -1,16 +1,20 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ValidatorsComponent} from '../../../common/validators.component';
 
 @Component({
   selector: 'app-reactive-form',
   templateUrl: './reactive-form.component.html'
 })
 export class ReactiveFormComponent implements OnInit {
-private form: FormGroup;
+  private form: FormGroup;
+
+
+
   ngOnInit() {
     this.form = new FormGroup({
-      'notebookName': new FormControl(''),
-      'sheetCount': new FormControl(10)
+      'notebookName': new FormControl('', [ValidatorsComponent.nameValidator]),
+      'sheetCount': new FormControl()
     });
   }
 }
