@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {UsersService} from '../../common/users.service';
+import {UsersService} from '../../common/service/users.service';
 import {UserDetailsComponent} from './page-components/user-details.component';
 import {User} from '../../model/user.model';
 import {UserListComponent} from './page-components/user-list.component';

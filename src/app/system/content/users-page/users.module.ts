@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {UsersService} from '../../common/users.service';
+import {UsersService} from '../../common/service/users.service';
 import {UserListComponent} from './page-components/user-list.component';
 import {UserDetailsComponent} from './page-components/user-details.component';
 import {AddFormComponent} from './page-components/add-user-form/add-form.component';

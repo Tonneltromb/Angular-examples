@@ -1,7 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {User} from '../../../../model/user.model';
 import {FormControl, FormGroup} from '@angular/forms';
-import {UsersService} from '../../../../common/users.service';
+import {UsersService} from '../../../../common/service/users.service';
 
 @Component({
   selector: 'app-add-form',

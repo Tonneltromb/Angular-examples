@@ -13,6 +13,8 @@ import {FormsPageComponent} from './system/content/forms-page/forms-page.compone
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsPageModule} from './system/content/forms-page/forms-page.module';
+import { SimpleBackgroundColorDirective } from './system/common/directive/background-color.directive';
+import {DirectivesModule} from './system/common/directive/directives.module';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import {FormsPageModule} from './system/content/forms-page/forms-page.module';
     HttpModule,
     PrimeNgImports,
     AppRoutingModule,
-    FormsPageModule
+    FormsPageModule,
+    DirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

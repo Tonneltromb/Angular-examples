@@ -4,7 +4,9 @@ import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-home-page',
   template: `
-    <h1>Welcome to home page!</h1>
+    <h1 [backCustom]="{background: 'orange'}">
+      Welcome to the home page!
+    </h1>
     <button class="btn btn-primary" (click)="toUsersPage()">Пользователи</button>
   `
 })
