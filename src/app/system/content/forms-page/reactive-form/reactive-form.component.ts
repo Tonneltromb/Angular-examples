@@ -7,7 +7,7 @@ import {ValidatorsComponent} from '../../../common/validators.component';
   templateUrl: './reactive-form.component.html'
 })
 export class ReactiveFormComponent implements OnInit {
-  private form: FormGroup;
+  form: FormGroup;
 
 
 

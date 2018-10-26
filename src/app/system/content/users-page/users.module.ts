@@ -5,7 +5,7 @@ import {UserDetailsComponent} from './page-components/user-details.component';
 import {AddFormComponent} from './page-components/add-user-form/add-form.component';
 import {PrimeNgImports} from '../../common/primeNg-imports';
 import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 import {UsersComponent} from './users.component';
 import {UsersRoutingModule} from './users-routing.module';
 import {UserPageComponent} from './page-components/user-page.component';

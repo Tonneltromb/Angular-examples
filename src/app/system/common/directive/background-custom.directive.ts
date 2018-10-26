@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2} from '@angular/core';
+import {Directive, HostBinding, HostListener, Input} from '@angular/core';
 
 class Params {
   constructor(public background: string,
@@ -6,7 +6,7 @@ class Params {
 }
 
 @Directive({
-  selector: '[backCustom]'
+  selector: '[appBackCustom]'
 })
 export class BackgroundCustomDirective {
   private oldBackground: string;

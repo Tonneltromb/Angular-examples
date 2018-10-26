@@ -1,23 +1,26 @@
 import {Injectable} from '@angular/core';
 import {User} from '../../model/user.model';
-import {Http, Response} from '@angular/http';
-import {Observable} from 'rxjs/Observable';
+import {HttpClient} from '@angular/common/http';
 
 const URL = 'http://localhost:3000';
 
 @Injectable()
 export class UsersService {
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
-  getUsers() { return this.http.get(URL + '/users').map((response: Response) => response.json()); }
-
-  getUser(id: number) {
-    return this.http.get(URL + '/users/' + id)
-      .map((response: Response) => response.json())
-      .catch(() => Observable.throw('Ошибка!'));
+  getUsers() {
+    return this.http.get(URL + '/users');
   }
 
-  addUser(user: User) { return this.http.post(URL + '/users', user).map((response: Response) => response.json()); }
+  getUser(id: number) {
+    return this.http.get(URL + '/users/' + id);
+  }
 
-  editUser(user: User) { return this.http.put(URL + '/users/' + user.id, user); }
+  addUser(user: User) {
+    return this.http.post(URL + '/users', user);
+  }
+
+  editUser(user: User) {
+    return this.http.put(URL + '/users/' + user.id, user);
+  }
 }

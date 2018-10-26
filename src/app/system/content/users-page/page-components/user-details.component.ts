@@ -1,6 +1,5 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 import {User} from '../../../model/user.model';
-import {UsersService} from '../../../common/service/users.service';
 
 @Component({
   selector: 'app-user-dedails',
